@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW `prod-organize-arizon-4e1c0a83.rich_christina_proj.ld_19_voteprop` AS (
+CREATE OR REPLACE VIEW `prod-organize-arizon-4e1c0a83.rich_christina_proj.ld_16_voteprop` AS (
 
 WITH
   crosswalk AS (
@@ -24,7 +24,7 @@ WITH
     WHERE
       d.state = 'AZ'
       AND p.state = 'AZ'
-      AND d.statehousedistrict = '19'
+      AND d.statehousedistrict = '16'
       AND voterstatus = 'active'
       AND m.catalistmodel_voteprop2026 IS NOT NULL
     GROUP BY 1, 2
